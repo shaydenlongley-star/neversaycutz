@@ -1826,14 +1826,19 @@ footer {
     transition: border-color 0.25s, transform 0.25s;
 }
 .location-card--link {
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
+    cursor: default;
 }
 .location-card--link:hover {
     border-color: var(--gold-border);
     transform: translateY(-4px);
 }
+.loc-name-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.loc-name-link:hover strong { color: var(--gold); }
 
 /* Card image */
 .loc-card-img {
@@ -1871,7 +1876,6 @@ footer {
     text-overflow: ellipsis;
     transition: color 0.2s;
 }
-.location-card--link:hover strong { color: var(--gold); }
 .location-card p {
     font-size: 0.75rem;
     color: var(--text-dim);
