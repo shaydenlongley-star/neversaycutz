@@ -8,10 +8,10 @@
     --black:       #0D0D0D;
     --black-2:     #141414;
     --black-3:     #1C1C1C;
-    --gold:        #D4AF37;
-    --gold-light:  #E8C94F;
-    --gold-dim:    rgba(212,175,55,0.12);
-    --gold-border: rgba(212,175,55,0.35);
+    --gold:        #85CFCC;
+    --gold-light:  #A0DAD8;
+    --gold-dim:    rgba(133,207,204,0.12);
+    --gold-border: rgba(133,207,204,0.35);
     --white:       #FFFFFF;
     --text:        rgba(255,255,255,0.88);
     --text-mid:    rgba(255,255,255,0.55);
@@ -281,7 +281,7 @@ section { padding: 100px 0; }
     transform: translate(-50%, -50%);
     width: 800px;
     height: 800px;
-    background: radial-gradient(circle, rgba(212,175,55,0.07) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(133,207,204,0.07) 0%, transparent 65%);
     pointer-events: none;
     z-index: 0;
 }
@@ -392,7 +392,7 @@ section { padding: 100px 0; }
     right: -100px;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(212,175,55,0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(133,207,204,0.05) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -449,13 +449,13 @@ section { padding: 100px 0; }
     display: block;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 4rem;
-    color: rgba(212,175,55,0.08);
+    color: rgba(133,207,204,0.08);
     line-height: 1;
     margin-bottom: 20px;
     transition: color 0.3s;
 }
 
-.service-card:hover .service-num { color: rgba(212,175,55,0.18); }
+.service-card:hover .service-num { color: rgba(133,207,204,0.18); }
 
 .service-icon {
     width: 36px;
@@ -577,7 +577,7 @@ section { padding: 100px 0; }
     transform: translate(-50%, -50%);
     width: 700px;
     height: 700px;
-    background: radial-gradient(circle, rgba(212,175,55,0.06) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(133,207,204,0.06) 0%, transparent 65%);
     pointer-events: none;
 }
 
@@ -1133,7 +1133,7 @@ footer {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at center, rgba(212,175,55,0.06) 0%, transparent 65%);
+    background: radial-gradient(ellipse at center, rgba(133,207,204,0.06) 0%, transparent 65%);
     z-index: 0;
 }
 .hero-content { position: relative; z-index: 1; }
@@ -1258,7 +1258,7 @@ footer {
 .booking-cta-bg {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at center, rgba(212,175,55,0.07) 0%, transparent 65%);
+    background: radial-gradient(ellipse at center, rgba(133,207,204,0.07) 0%, transparent 65%);
     pointer-events: none;
 }
 .booking-cta-content { position: relative; z-index: 1; }
@@ -1499,7 +1499,7 @@ footer {
     right: -80px;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(212,175,55,0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(133,207,204,0.05) 0%, transparent 70%);
     pointer-events: none;
 }
 .page-hero-title {
