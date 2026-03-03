@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — NEVERSAYCUTZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-en">
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-brand">NEVERSAYCUTZ</a>
+        <div class="nav-center">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html"><span class="t-en">Home</span><span class="t-th">หน้าแรก</span></a></li>
+                <li><a href="services.html"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+                <li><a href="gallery.html" class="active"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+                <li><a href="locations.html"><span class="t-en">Locations</span><span class="t-th">สาขา</span></a></li>
+                <li><a href="blog.html"><span class="t-en">Blog</span><span class="t-th">บทความ</span></a></li>
+                <li><a href="about.html"><span class="t-en">About</span><span class="t-th">เกี่ยวกับ</span></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <button class="lang-btn" id="langToggle">TH</button>
+            <a href="https://lin.ee/nV2I7Cd" target="_blank" rel="noopener" class="btn btn-nav">
+                <span class="t-en">Book Now</span><span class="t-th">จองคิว</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html"><span class="t-en">Home</span><span class="t-th">หน้าแรก</span></a></li>
+            <li><a href="services.html"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+            <li><a href="gallery.html"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+            <li><a href="locations.html"><span class="t-en">Locations</span><span class="t-th">สาขา</span></a></li>
+            <li><a href="blog.html"><span class="t-en">Blog</span><span class="t-th">บทความ</span></a></li>
+            <li><a href="about.html"><span class="t-en">About</span><span class="t-th">เกี่ยวกับ</span></a></li>
+        </ul>
+        <div class="mobile-cta">
+            <a href="https://lin.ee/nV2I7Cd" target="_blank" rel="noopener" class="btn"><span class="t-en">Book on Line</span><span class="t-th">จองผ่าน Line</span></a>
+            <a href="https://m.me/120499187997547" target="_blank" rel="noopener" class="btn btn-outline"><span class="t-en">Book on Messenger</span><span class="t-th">จองผ่าน Messenger</span></a>
+        </div>
+    </div>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <h1 class="page-hero-title">
+            <span class="t-en">GALLERY</span>
+            <span class="t-th">ผลงาน</span>
+        </h1>
+        <p class="page-hero-sub">
+            <span class="t-en">The work speaks for itself.</span>
+            <span class="t-th">ผลงานพูดแทนตัวเอง</span>
+        </p>
+    </div>
+
+    <!-- GALLERY FILTERS -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="gallery-filters reveal">
+                <button class="filter-btn active" data-filter="all">
+                    <span class="t-en">All</span>
+                    <span class="t-th">ทั้งหมด</span>
+                </button>
+                <button class="filter-btn" data-filter="cuts">
+                    <span class="t-en">Cuts</span>
+                    <span class="t-th">ตัดผม</span>
+                </button>
+                <button class="filter-btn" data-filter="fades">
+                    <span class="t-en">Fades</span>
+                    <span class="t-th">เฟด</span>
+                </button>
+                <button class="filter-btn" data-filter="designs">
+                    <span class="t-en">Designs</span>
+                    <span class="t-th">แกะลาย</span>
+                </button>
+                <button class="filter-btn" data-filter="shaves">
+                    <span class="t-en">Shaves</span>
+                    <span class="t-th">โกนหนวด</span>
+                </button>
+            </div>
+
+            <!-- GALLERY MASONRY GRID -->
+            <div class="gallery-full reveal">
+                <div class="gallery-item-full" data-cat="cuts">
+                    <img src="https://neversaycutz.com/wp-content/uploads/2022/01/gallery-1.jpg" alt="Haircut 1" onerror="this.parentElement.classList.add('img-placeholder')">
+                    <div class="gallery-item-label">
+                        <span class="t-en">Classic Taper</span>
+                        <span class="t-th">คลาสสิก เทเปอร์</span>
+                    </div>
+                </div>
+                <div class="gallery-item-full" data-cat="fades">
+                    <img src="https://neversaycutz.com/wp-content/uploads/2022/01/gallery-2.jpg" alt="Fade 1" onerror="this.parentElement.classList.add('img-placeholder')">
+                    <div class="gallery-item-label">
+                        <span class="t-en">High Fade</span>
+                        <span class="t-th">ไฮ เฟด</span>
+                    </div>
+                </div>
+                <div class="gallery-item-full" data-cat="designs">
+                    <img src="https://neversaycutz.com/wp-content/uploads/2022/01/gallery-3.jpg" alt="Design 1" onerror="this.parentElement.classList.add('img-placeholder')">
+                    <div class="gallery-item-label">
+                        <span class="t-en">Geometric Design</span>
+                        <span class="t-th">ลายเรขาคณิต</span>
+                    </div>
+                </div>
+                <div class="gallery-item-full" data-cat="cuts">
+                    <img src="https://neversaycutz.com/wp-content/uploads/2022/01/gallery-4.jpg" alt="Haircut 2" onerror="this.parentElement.classList.add('img-placeholder')">
+                    <div class="gallery-item-label">
+                        <span class="t-en">Textured Crop</span>
+                        <span class="t-th">เท็กซ์เจอร์ ครอป</span>
+                    </div>
+                </div>
+                <div class="gallery-item-full" data-cat="shaves">
+                    <img src="https://neversaycutz.com/wp-content/uploads/2022/01/gallery-5.jpg" alt="Shave 1" onerror="this.parentElement.classList.add('img-placeholder')">
+                    <div class="gallery-item-label">
+                        <span class="t-en">Hot Towel Shave</span>
+                        <span class="t-th">โกนด้วยผ้าร้อน</span>
+                    </div>
+                </div>
+                <div class="gallery-item-full" data-cat="fades">
+                    <img src="https://neversaycutz.com/wp-content/uploads/2022/01/gallery-6.jpg" alt="Fade 2" onerror="this.parentElement.classList.add('img-placeholder')">
+                    <div class="gallery-item-label">
+                        <span class="t-en">Skin Fade</span>
+                        <span class="t-th">สกิน เฟด</span>
+                    </div>
+                </div>
+                <div class="gallery-item-full" data-cat="designs">
+                    <img src="https://neversaycutz.com/wp-content/uploads/2022/01/gallery-7.jpg" alt="Design 2" onerror="this.parentElement.classList.add('img-placeholder')">
+                    <div class="gallery-item-label">
+                        <span class="t-en">Custom Line Art</span>
+                        <span class="t-th">ลายศิลปะพิเศษ</span>
+                    </div>
+                </div>
+                <div class="gallery-item-full" data-cat="cuts">
+                    <img src="https://neversaycutz.com/wp-content/uploads/2022/01/gallery-8.jpg" alt="Haircut 3" onerror="this.parentElement.classList.add('img-placeholder')">
+                    <div class="gallery-item-label">
+                        <span class="t-en">Pompadour</span>
+                        <span class="t-th">พอมพาดัวร์</span>
+                    </div>
+                </div>
+                <div class="gallery-item-full" data-cat="fades">
+                    <img src="https://neversaycutz.com/wp-content/uploads/2022/01/gallery-9.jpg" alt="Fade 3" onerror="this.parentElement.classList.add('img-placeholder')">
+                    <div class="gallery-item-label">
+                        <span class="t-en">Temp Fade</span>
+                        <span class="t-th">เทมป์ เฟด</span>
+                    </div>
+                </div>
+                <div class="gallery-item-full" data-cat="cuts">
+                    <img src="https://neversaycutz.com/wp-content/uploads/2022/01/gallery-10.jpg" alt="Haircut 4" onerror="this.parentElement.classList.add('img-placeholder')">
+                    <div class="gallery-item-label">
+                        <span class="t-en">Buzz Cut</span>
+                        <span class="t-th">บัซ คัท</span>
+                    </div>
+                </div>
+                <div class="gallery-item-full" data-cat="designs">
+                    <img src="https://neversaycutz.com/wp-content/uploads/2022/01/gallery-11.jpg" alt="Design 3" onerror="this.parentElement.classList.add('img-placeholder')">
+                    <div class="gallery-item-label">
+                        <span class="t-en">Logo Design</span>
+                        <span class="t-th">ลายโลโก้</span>
+                    </div>
+                </div>
+                <div class="gallery-item-full" data-cat="shaves">
+                    <img src="https://neversaycutz.com/wp-content/uploads/2022/01/gallery-12.jpg" alt="Shave 2" onerror="this.parentElement.classList.add('img-placeholder')">
+                    <div class="gallery-item-label">
+                        <span class="t-en">Beard Shape Up</span>
+                        <span class="t-th">ตกแต่งเครา</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INSTAGRAM PROMO -->
+            <div class="insta-promo reveal">
+                <div class="insta-promo-content">
+                    <p class="section-label t-en">Follow Our Work</p>
+                    <p class="section-label t-th">ติดตามผลงาน</p>
+                    <h3 class="t-en">SEE MORE ON<br>INSTAGRAM</h3>
+                    <h3 class="t-th">ดูเพิ่มเติมบน<br>อินสตาแกรม</h3>
+                    <a href="https://www.instagram.com/neversaycutz/" target="_blank" rel="noopener" class="btn" style="margin-top: 24px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0z"/><circle cx="12" cy="12" r="4"/><circle cx="18.406" cy="5.594" r="1.44"/></svg>
+                        @neversaycutz
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">NEVERSAYCUTZ</div>
+                    <p class="t-en">New York Style Barber Shop in Thailand since 2008.</p>
+                    <p class="t-th">บาร์เบอร์ช็อปสไตล์นิวยอร์กในไทย ตั้งแต่ปี 2551</p>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/NeverSayCutz" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="https://www.instagram.com/neversaycutz/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                        <a href="https://lin.ee/nV2I7Cd" target="_blank" rel="noopener" aria-label="Line"><svg viewBox="0 0 36 36" fill="currentColor"><path d="M32.7 15.9C32.7 8.9 25.6 3.2 17 3.2S1.3 8.9 1.3 15.9c0 6.2 5.5 11.4 13 12.4.5.1 1.2.3 1.4.8.2.4.1 1 .1 1.4l-.2 1.3c-.1.4-.4 1.7 1.4.9 1.8-.8 9.7-5.7 13.2-9.8 2.5-2.7 3.5-5.4 3.5-7z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="t-en">Services</h4><h4 class="t-th">บริการ</h4>
+                    <ul>
+                        <li><a href="services.html"><span class="t-en">Haircut</span><span class="t-th">ตัดผม</span></a></li>
+                        <li><a href="services.html"><span class="t-en">Shave Up</span><span class="t-th">โกนหนวด</span></a></li>
+                        <li><a href="services.html"><span class="t-en">Toddlers</span><span class="t-th">ตัดผมเด็ก</span></a></li>
+                        <li><a href="services.html"><span class="t-en">Designs</span><span class="t-th">แกะลาย</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="t-en">Navigate</h4><h4 class="t-th">เมนู</h4>
+                    <ul>
+                        <li><a href="index.html"><span class="t-en">Home</span><span class="t-th">หน้าแรก</span></a></li>
+                        <li><a href="gallery.html"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+                        <li><a href="locations.html"><span class="t-en">Locations</span><span class="t-th">สาขา</span></a></li>
+                        <li><a href="about.html"><span class="t-en">About</span><span class="t-th">เกี่ยวกับ</span></a></li>
+                        <li><a href="blog.html"><span class="t-en">Blog</span><span class="t-th">บทความ</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="t-en">Contact</h4><h4 class="t-th">ติดต่อ</h4>
+                    <ul class="footer-contact">
+                        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.4 10.94a19.79 19.79 0 01-3.07-8.67A2 2 0 012.31 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006 6l1.27-.76a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:0994244544">099-424-4544</a></li>
+                        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@neversaycutz.com">info@neversaycutz.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NEVERSAYCUTZ. <span class="t-en">All rights reserved.</span><span class="t-th">สงวนลิขสิทธิ์ทุกประการ</span></p>
+                <div class="footer-book"><a href="https://lin.ee/nV2I7Cd" target="_blank" rel="noopener" class="btn btn-sm"><span class="t-en">Book Now</span><span class="t-th">จองเลย</span></a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item-full');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                galleryItems.forEach(item => {
+                    item.style.display = (filter === 'all' || item.dataset.cat === filter) ? '' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
