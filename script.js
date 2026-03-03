@@ -50,3 +50,55 @@ const navLinks = document.querySelectorAll('.nav-links a');
 navLinks.forEach(link => {
     if (link.href === window.location.href) link.classList.add('active');
 });
+
+// ── PAGE TRANSITIONS
+document.body.classList.add('page-ready');
+document.addEventListener('click', e => {
+    const link = e.target.closest('a[href]');
+    if (!link) return;
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
+    if (link.target === '_blank' || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    if (link.hostname && link.hostname !== window.location.hostname) return;
+    e.preventDefault();
+    document.body.classList.remove('page-ready');
+    setTimeout(() => { window.location = link.href; }, 220);
+});
+
+// ── STAT COUNTERS
+const counterEls = document.querySelectorAll('.stat-num[data-count]');
+if (counterEls.length) {
+    const counterObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            counterObserver.unobserve(entry.target);
+            const el = entry.target;
+            const target = parseInt(el.dataset.count, 10);
+            const duration = 1400;
+            const start = performance.now();
+            function tick(now) {
+                const elapsed = now - start;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                const current = Math.floor(eased * target);
+                el.childNodes[0].nodeValue = current;
+                if (progress < 1) requestAnimationFrame(tick);
+                else el.childNodes[0].nodeValue = target;
+            }
+            requestAnimationFrame(tick);
+        });
+    }, { threshold: 0.5 });
+    counterEls.forEach(el => counterObserver.observe(el));
+}
+
+// ── FLOATING BOOK BUTTON — hide when nav-book button is visible
+const floatBtn = document.querySelector('.float-book');
+if (floatBtn) {
+    const navBook = document.querySelector('.btn-nav');
+    const hideObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            floatBtn.classList.toggle('hidden', e.isIntersecting);
+        });
+    }, { threshold: 0.5 });
+    if (navBook) hideObserver.observe(navBook);
+}
