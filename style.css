@@ -1811,50 +1811,77 @@ footer {
 
 .locations-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
+
+/* Image-based location card */
 .location-card {
     display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 20px 16px 20px 0;
-    border-bottom: 1px solid var(--border);
-    transition: background 0.2s;
+    flex-direction: column;
+    background: var(--black-3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.25s, transform 0.25s;
 }
-.location-card .loc-dot { margin-top: 5px; }
+.location-card--link {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+.location-card--link:hover {
+    border-color: var(--gold-border);
+    transform: translateY(-4px);
+}
+
+/* Card image */
+.loc-card-img {
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background: var(--black-2);
+    flex-shrink: 0;
+}
+.loc-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+.location-card--link:hover .loc-card-img img { transform: scale(1.06); }
+
+/* Card footer info */
+.loc-card-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+}
+.loc-card-body { flex: 1; min-width: 0; }
 .location-card strong {
     display: block;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 0.95rem;
+    font-size: 1rem;
     letter-spacing: 0.04em;
     color: var(--white);
     margin-bottom: 2px;
-}
-.location-card p {
-    font-size: 0.78rem;
-    color: var(--text-dim);
-    line-height: 1.4;
-}
-
-/* Clickable location card */
-.location-card--link {
-    cursor: pointer;
-    padding-right: 8px;
-    position: relative;
-}
-.location-card--link:hover {
-    background: var(--gold-dim);
-    border-radius: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.2s;
 }
 .location-card--link:hover strong { color: var(--gold); }
-.loc-card-body { flex: 1; min-width: 0; }
+.location-card p {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    line-height: 1.3;
+}
 .loc-maps-icon {
     flex-shrink: 0;
     opacity: 0;
     color: var(--gold);
     transition: opacity 0.2s;
-    margin-top: 4px;
 }
 .location-card--link:hover .loc-maps-icon { opacity: 1; }
 
@@ -2243,7 +2270,7 @@ footer {
     .values-grid { grid-template-columns: repeat(2, 1fr); }
     .team-grid { grid-template-columns: repeat(2, 1fr); }
     .contact-grid { grid-template-columns: repeat(2, 1fr); }
-    .locations-grid { grid-template-columns: repeat(3, 1fr); }
+    .locations-grid { grid-template-columns: repeat(2, 1fr); }
     .location-hq-content { flex-direction: column; align-items: flex-start; }
     .stats-bar { padding: 32px 20px; }
     .stat { padding: 0 30px; }
