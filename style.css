@@ -901,13 +901,14 @@ footer {
 }
 
 .footer-logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.8rem;
-    letter-spacing: 0.05em;
-    color: var(--white);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
-.footer-logo span { color: var(--gold); }
+.footer-logo img {
+    height: 48px;
+    width: auto;
+    filter: invert(1);
+    display: block;
+}
 
 .footer-grid > div > p {
     font-size: 0.85rem;
@@ -1022,12 +1023,15 @@ footer {
 }
 
 .nav-brand {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: 0.08em;
-    color: var(--white);
-    white-space: nowrap;
+    display: flex;
+    align-items: center;
     flex-shrink: 0;
+}
+.nav-brand img {
+    height: 36px;
+    width: auto;
+    filter: invert(1);
+    display: block;
 }
 
 .nav-center { flex: 1; display: flex; justify-content: center; }
