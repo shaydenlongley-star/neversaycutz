@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with NEVERSAYCUTZ — franchise enquiries, general questions, and media requests welcome.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact — NEVERSAYCUTZ">
+    <meta property="og:description" content="Get in touch with NEVERSAYCUTZ — franchise enquiries, general questions, and media requests welcome.">
+    <meta property="og:image" content="img/hero-banner.jpg">
+    <meta property="og:url" content="https://neversaycutz-demo.netlify.app/contact.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact — NEVERSAYCUTZ">
+    <meta name="twitter:description" content="Get in touch with NEVERSAYCUTZ — franchise enquiries, general questions, and media requests welcome.">
+    <meta name="twitter:image" content="img/hero-banner.jpg">
+    <title>Contact — NEVERSAYCUTZ</title>
+    <link rel="icon" href="favicon.ico"><link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-en">
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-brand"><img src="img/logo.png" alt="NEVERSAYCUTZ"></a>
+        <div class="nav-center">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html"><span class="t-en">Home</span><span class="t-th">หน้าแรก</span></a></li>
+                <li><a href="services.html"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+                <li><a href="gallery.html"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+                <li><a href="locations.html"><span class="t-en">Locations</span><span class="t-th">สาขา</span></a></li>
+                <li><a href="about.html"><span class="t-en">About</span><span class="t-th">เกี่ยวกับ</span></a></li>
+                <li><a href="contact.html" class="active"><span class="t-en">Contact</span><span class="t-th">ติดต่อ</span></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <button class="lang-btn" id="langToggle">TH</button>
+            <a href="https://lin.ee/nV2I7Cd" target="_blank" rel="noopener" class="btn btn-nav">
+                <span class="t-en">Book Now</span><span class="t-th">จองคิว</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html"><span class="t-en">Home</span><span class="t-th">หน้าแรก</span></a></li>
+            <li><a href="services.html"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+            <li><a href="gallery.html"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+            <li><a href="locations.html"><span class="t-en">Locations</span><span class="t-th">สาขา</span></a></li>
+            <li><a href="about.html"><span class="t-en">About</span><span class="t-th">เกี่ยวกับ</span></a></li>
+            <li><a href="contact.html"><span class="t-en">Contact</span><span class="t-th">ติดต่อ</span></a></li>
+        </ul>
+        <div class="mobile-cta">
+            <a href="https://lin.ee/nV2I7Cd" target="_blank" rel="noopener" class="btn"><span class="t-en">Book on Line</span><span class="t-th">จองผ่าน Line</span></a>
+            <a href="https://m.me/120499187997547" target="_blank" rel="noopener" class="btn btn-outline"><span class="t-en">Book on Messenger</span><span class="t-th">จองผ่าน Messenger</span></a>
+        </div>
+    </div>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <h1 class="page-hero-title">
+            <span class="t-en">GET IN<br>TOUCH</span>
+            <span class="t-th">ติดต่อ<br>เรา</span>
+        </h1>
+        <p class="page-hero-sub">
+            <span class="t-en">Franchise enquiries, partnerships, or general questions — we'd love to hear from you.</span>
+            <span class="t-th">สอบถามแฟรนไชส์ ความร่วมมือ หรือคำถามทั่วไป — เราอยากได้ยินจากคุณ</span>
+        </p>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="contact-split">
+
+                <!-- FORM -->
+                <div class="contact-form-wrap reveal">
+                    <p class="section-label">
+                        <span class="t-en">Send a Message</span>
+                        <span class="t-th">ส่งข้อความ</span>
+                    </p>
+                    <h2 class="section-title left">
+                        <span class="t-en">LET'S<br>TALK</span>
+                        <span class="t-th">คุย<br>กัน</span>
+                    </h2>
+
+                    <form name="contact" method="POST" data-netlify="true" class="contact-form" id="contactForm">
+                        <input type="hidden" name="form-name" value="contact">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name"><span class="t-en">Full Name</span><span class="t-th">ชื่อ-นามสกุล</span></label>
+                                <input type="text" id="name" name="name" required placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><span class="t-en">Email</span><span class="t-th">อีเมล</span></label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone"><span class="t-en">Phone</span><span class="t-th">โทรศัพท์</span> <span class="form-optional t-en">(optional)</span><span class="form-optional t-th">(ไม่บังคับ)</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="+66 XX XXX XXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject"><span class="t-en">Subject</span><span class="t-th">หัวข้อ</span></label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected></option>
+                                    <option value="Franchise Enquiry">Franchise Enquiry</option>
+                                    <option value="Partnership">Partnership</option>
+                                    <option value="Media / Press">Media / Press</option>
+                                    <option value="General Question">General Question</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message"><span class="t-en">Message</span><span class="t-th">ข้อความ</span></label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us what's on your mind..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-contact">
+                            <span class="t-en">Send Message</span>
+                            <span class="t-th">ส่งข้อความ</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        </button>
+                    </form>
+
+                    <div class="form-success" id="formSuccess" style="display:none;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+                        <h3 class="t-en">Message sent.</h3>
+                        <h3 class="t-th">ส่งข้อความแล้ว</h3>
+                        <p class="t-en">We'll get back to you within 24 hours.</p>
+                        <p class="t-th">เราจะติดต่อกลับภายใน 24 ชั่วโมง</p>
+                    </div>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div class="contact-info-panel reveal">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.4 10.94a19.79 19.79 0 01-3.07-8.67A2 2 0 012.31 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006 6l1.27-.76a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="t-en">Phone</h4>
+                            <h4 class="t-th">โทรศัพท์</h4>
+                            <a href="tel:0994244544">099-424-4544</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="t-en">Email</h4>
+                            <h4 class="t-th">อีเมล</h4>
+                            <a href="mailto:info@neversaycutz.com">info@neversaycutz.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="t-en">Head Office</h4>
+                            <h4 class="t-th">สำนักงานใหญ่</h4>
+                            <p class="t-en">125/34, 2nd–4th Floor<br>Soi Sukhumvit 55 (Thonglor)<br>Bangkok 10110</p>
+                            <p class="t-th">125/34 ชั้น 2-4<br>ซอยสุขุมวิท 55 (ทองหล่อ)<br>กรุงเทพฯ 10110</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="t-en">Hours</h4>
+                            <h4 class="t-th">เวลาทำการ</h4>
+                            <p class="t-en">Mon – Sun: 10:00 – 21:00</p>
+                            <p class="t-th">จันทร์ – อาทิตย์: 10:00 – 21:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://www.facebook.com/NeverSayCutz" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="https://www.instagram.com/neversaycutz/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                        <a href="https://lin.ee/nV2I7Cd" target="_blank" rel="noopener" aria-label="Line"><svg viewBox="0 0 36 36" fill="currentColor"><path d="M32.7 15.9C32.7 8.9 25.6 3.2 17 3.2S1.3 8.9 1.3 15.9c0 6.2 5.5 11.4 13 12.4.5.1 1.2.3 1.4.8.2.4.1 1 .1 1.4l-.2 1.3c-.1.4-.4 1.7 1.4.9 1.8-.8 9.7-5.7 13.2-9.8 2.5-2.7 3.5-5.4 3.5-7z"/></svg></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo"><img src="img/logo.png" alt="NEVERSAYCUTZ"></div>
+                    <p class="t-en">New York Style Barber Shop in Thailand since 2008.</p>
+                    <p class="t-th">บาร์เบอร์ช็อปสไตล์นิวยอร์กในไทย ตั้งแต่ปี 2551</p>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/NeverSayCutz" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="https://www.instagram.com/neversaycutz/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                        <a href="https://lin.ee/nV2I7Cd" target="_blank" rel="noopener" aria-label="Line"><svg viewBox="0 0 36 36" fill="currentColor"><path d="M32.7 15.9C32.7 8.9 25.6 3.2 17 3.2S1.3 8.9 1.3 15.9c0 6.2 5.5 11.4 13 12.4.5.1 1.2.3 1.4.8.2.4.1 1 .1 1.4l-.2 1.3c-.1.4-.4 1.7 1.4.9 1.8-.8 9.7-5.7 13.2-9.8 2.5-2.7 3.5-5.4 3.5-7z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col"><h4 class="t-en">Services</h4><h4 class="t-th">บริการ</h4><ul><li><a href="services.html"><span class="t-en">Haircut</span><span class="t-th">ตัดผม</span></a></li><li><a href="services.html"><span class="t-en">Shave Up</span><span class="t-th">โกนหนวด</span></a></li><li><a href="services.html"><span class="t-en">Toddlers</span><span class="t-th">ตัดผมเด็ก</span></a></li><li><a href="services.html"><span class="t-en">Designs</span><span class="t-th">แกะลาย</span></a></li></ul></div>
+                <div class="footer-col"><h4 class="t-en">Contact</h4><h4 class="t-th">ติดต่อ</h4><ul class="footer-contact"><li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.4 10.94a19.79 19.79 0 01-3.07-8.67A2 2 0 012.31 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006 6l1.27-.76a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:0994244544">099-424-4544</a></li><li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@neversaycutz.com">info@neversaycutz.com</a></li></ul></div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NEVERSAYCUTZ. <span class="t-en">All rights reserved.</span><span class="t-th">สงวนลิขสิทธิ์ทุกประการ</span></p>
+                <div class="footer-book"><a href="https://lin.ee/nV2I7Cd" target="_blank" rel="noopener" class="btn btn-sm"><span class="t-en">Book Now</span><span class="t-th">จองเลย</span></a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <a href="https://lin.ee/nV2I7Cd" target="_blank" rel="noopener" class="float-book">
+        <svg viewBox="0 0 36 36" fill="currentColor"><path d="M32.7 15.9C32.7 8.9 25.6 3.2 17 3.2S1.3 8.9 1.3 15.9c0 6.2 5.5 11.4 13 12.4.5.1 1.2.3 1.4.8.2.4.1 1 .1 1.4l-.2 1.3c-.1.4-.4 1.7 1.4.9 1.8-.8 9.7-5.7 13.2-9.8 2.5-2.7 3.5-5.4 3.5-7z"/></svg>
+        <span class="t-en">Book Now</span>
+        <span class="t-th">จองเลย</span>
+    </a>
+</body>
+</html>

@@ -195,6 +195,18 @@ if (nearestBtn) {
     });
 }
 
+// ── CONTACT FORM — Netlify AJAX submit
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const data = new FormData(contactForm);
+        await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() });
+        contactForm.style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'flex';
+    });
+}
+
 // ── FLOATING BOOK BUTTON — hide when nav-book button is visible
 const floatBtn = document.querySelector('.float-book');
 if (floatBtn) {
