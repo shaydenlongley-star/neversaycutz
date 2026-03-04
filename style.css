@@ -1877,8 +1877,66 @@ footer {
     opacity: 0;
     color: var(--gold);
     transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 .location-card--link:hover .loc-maps-icon { opacity: 1; }
+
+/* Zone filter toolbar */
+.zone-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+.zone-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 16px;
+    background: var(--black-2);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.zone-btn:hover { border-color: var(--gold); color: var(--gold); }
+.zone-btn.active { border-color: var(--gold); color: var(--gold); background: rgba(212,175,55,0.08); }
+.zone-btn--locate { margin-left: auto; color: var(--text-mid); }
+.zone-btn--locate:hover, .zone-btn--locate.active { color: var(--gold); border-color: var(--gold); }
+@media (max-width: 600px) {
+    .zone-btn--locate { margin-left: 0; }
+}
+
+/* Nearest branch highlight */
+.location-card.nearest-branch {
+    border: 1px solid var(--gold);
+    box-shadow: 0 0 0 3px rgba(212,175,55,0.18);
+    position: relative;
+}
+.location-card.nearest-branch::before {
+    content: 'Nearest';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: var(--gold);
+    color: #000;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 7px;
+    border-radius: 2px;
+    z-index: 2;
+}
 
 /* Province dot */
 .loc-dot--province {

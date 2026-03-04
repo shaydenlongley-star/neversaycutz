@@ -91,6 +91,110 @@ if (counterEls.length) {
     counterEls.forEach(el => counterObserver.observe(el));
 }
 
+// ── GALLERY FILTER
+const filterBtns = document.querySelectorAll('.filter-btn');
+if (filterBtns.length) {
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.dataset.filter;
+            document.querySelectorAll('.gallery-item-full').forEach(item => {
+                item.style.display = (filter === 'all' || item.dataset.cat === filter) ? '' : 'none';
+            });
+        });
+    });
+}
+
+// ── ZONE FILTER (locations page)
+const zoneBtns = document.querySelectorAll('.zone-btn');
+if (zoneBtns.length) {
+    zoneBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            zoneBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const zone = btn.dataset.zone;
+            document.querySelectorAll('.location-card').forEach(card => {
+                card.style.display = (zone === 'all' || card.dataset.zone === zone) ? '' : 'none';
+            });
+            document.querySelectorAll('.locations-region').forEach(region => {
+                const anyVisible = [...region.querySelectorAll('.location-card')].some(c => c.style.display !== 'none');
+                region.style.display = anyVisible ? '' : 'none';
+            });
+        });
+    });
+}
+
+// ── FIND NEAREST BRANCH
+const nearestBtn = document.getElementById('findNearest');
+if (nearestBtn) {
+    const branchCoords = {
+        'thonglor':                  [13.7215, 100.6068],
+        'sukhumvit-20':              [13.7374, 100.5601],
+        'sukhumvit-51':              [13.7250, 100.6010],
+        'onnut':                     [13.7050, 100.6037],
+        'ari':                       [13.7745, 100.5479],
+        'siam-square-one':           [13.7453, 100.5337],
+        'silom':                     [13.7259, 100.5293],
+        'town-in-town':              [13.7900, 100.5950],
+        'ratchayothin':              [13.8195, 100.5673],
+        'central-world':             [13.7466, 100.5393],
+        'mbk':                       [13.7459, 100.5294],
+        'victoria-gardens-bang-kae': [13.7018, 100.4443],
+        'central-pinklao':           [13.7683, 100.4806],
+        'don-muang':                 [13.9130, 100.5977],
+        'the-circle-ratchapruk':     [13.7302, 100.4549],
+        'the-mall-ngamwongwan':      [13.8324, 100.5551],
+        'little-walk-bangna':        [13.6743, 100.6108],
+        'lasalle':                   [13.6810, 100.6147],
+        'the-crystal-park':          [13.8346, 100.6338],
+        '101-true-digital-park':     [13.6882, 100.6047],
+        'the-nine-rama-9':           [13.7512, 100.5793],
+        'the-mall-bangkapi':         [13.7683, 100.6458],
+        'the-mall-bangkhae':         [13.7029, 100.4454],
+        'covehill':                  [13.7207, 100.4938],
+        'the-mall-thapra':           [13.7179, 100.4892],
+        'muang-thong':               [13.8895, 100.5551],
+        'korat':                     [14.9774, 102.0953],
+        'the-bright-rama-ii':        [13.6658, 100.4840],
+        'ptt-prachauthit':           [13.7678, 100.5845],
+        'ptt-vibhavadi':             [13.8437, 100.5627],
+        'ptt-boromratchachonnani':   [13.7743, 100.4228],
+        'market-place-nawamin':      [13.8126, 100.5929],
+        'charn-at-the-avenue':       [13.8708, 100.5289],
+        'the-quarter-silom':         [13.7294, 100.5259],
+    };
+    const origHTML = nearestBtn.innerHTML;
+    nearestBtn.addEventListener('click', () => {
+        if (!navigator.geolocation) { alert('Geolocation not supported by your browser.'); return; }
+        nearestBtn.textContent = 'Locating\u2026';
+        navigator.geolocation.getCurrentPosition(pos => {
+            const { latitude: lat, longitude: lng } = pos.coords;
+            let nearest = null, minDist = Infinity;
+            for (const [slug, [blat, blng]] of Object.entries(branchCoords)) {
+                const d = Math.hypot(lat - blat, lng - blng);
+                if (d < minDist) { minDist = d; nearest = slug; }
+            }
+            // Reset filters, show all
+            zoneBtns.forEach(b => b.classList.remove('active'));
+            const allBtn = document.querySelector('.zone-btn[data-zone="all"]');
+            if (allBtn) allBtn.classList.add('active');
+            document.querySelectorAll('.location-card, .locations-region').forEach(el => el.style.display = '');
+            // Highlight nearest
+            document.querySelectorAll('.location-card').forEach(c => c.classList.remove('nearest-branch'));
+            const card = document.querySelector(`.location-card[data-slug="${nearest}"]`);
+            if (card) {
+                card.classList.add('nearest-branch');
+                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+            nearestBtn.innerHTML = origHTML;
+        }, () => {
+            nearestBtn.innerHTML = origHTML;
+            alert('Could not get your location. Please check your browser permissions.');
+        });
+    });
+}
+
 // ── FLOATING BOOK BUTTON — hide when nav-book button is visible
 const floatBtn = document.querySelector('.float-book');
 if (floatBtn) {

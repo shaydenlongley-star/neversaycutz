@@ -100,6 +100,39 @@
                 </div>
             </div>
 
+
+            <!-- ZONE FILTER -->
+            <div class="zone-filter reveal">
+                <button class="zone-btn active" data-zone="all">
+                    <span class="t-en">All</span>
+                    <span class="t-th">à¸—à¸±à¹‰à¸‡à¸«à¸¡à¸”</span>
+                </button>
+                <button class="zone-btn" data-zone="sukhumvit">
+                    <span class="t-en">Sukhumvit</span>
+                    <span class="t-th">à¸ªà¸¸à¸‚à¸¸à¸¡à¸§à¸´à¸—</span>
+                </button>
+                <button class="zone-btn" data-zone="city-centre">
+                    <span class="t-en">City Centre</span>
+                    <span class="t-th">à¹ƒà¸ˆà¸à¸¥à¸²à¸‡à¹€à¸¡à¸·à¸­à¸‡</span>
+                </button>
+                <button class="zone-btn" data-zone="north">
+                    <span class="t-en">North Bangkok</span>
+                    <span class="t-th">à¸à¸£à¸¸à¸‡à¹€à¸—à¸žà¹€à¸«à¸™à¸·à¸­</span>
+                </button>
+                <button class="zone-btn" data-zone="west">
+                    <span class="t-en">West &amp; South</span>
+                    <span class="t-th">à¸•à¸°à¸§à¸±à¸™à¸•à¸ &amp; à¹ƒà¸•à¹‰</span>
+                </button>
+                <button class="zone-btn" data-zone="province">
+                    <span class="t-en">Outside Bangkok</span>
+                    <span class="t-th">à¸•à¹ˆà¸²à¸‡à¸ˆà¸±à¸‡à¸«à¸§à¸±à¸”</span>
+                </button>
+                <button class="zone-btn zone-btn--locate" id="findNearest">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z" stroke-width="1.5"/></svg>
+                    <span class="t-en">Find Nearest</span>
+                    <span class="t-th">à¸«à¸²à¸ªà¸²à¸‚à¸²à¹ƒà¸à¸¥à¹‰à¸‰à¸±à¸™</span>
+                </button>
+            </div>
             <!-- BANGKOK BRANCHES -->
             <div class="locations-region reveal">
                 <div class="region-header">
@@ -110,7 +143,7 @@
                 </div>
                 <div class="locations-grid">
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="sukhumvit" data-slug="thonglor">
                         <a href="branches/thonglor.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/thonglor.jpg" alt="Thonglor branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -118,11 +151,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Thonglor+Sukhumvit+55+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Thonglor</strong><strong class="t-th">ทองหล่อ</strong></a>
                                 <p class="t-en">Sukhumvit, Bangkok</p><p class="t-th">สุขุมวิท, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Thonglor+Sukhumvit+55+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="sukhumvit" data-slug="sukhumvit-20">
                         <a href="branches/sukhumvit-20.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/sukhumvit-20.jpg" alt="Sukhumvit 20 branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -130,11 +163,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Sukhumvit+20+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Sukhumvit 20</strong><strong class="t-th">สุขุมวิท 20</strong></a>
                                 <p class="t-en">Sukhumvit, Bangkok</p><p class="t-th">สุขุมวิท, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Sukhumvit+20+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="sukhumvit" data-slug="sukhumvit-51">
                         <a href="branches/sukhumvit-51.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/sukhumvit-51.jpg" alt="Sukhumvit 51 branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -142,11 +175,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Sukhumvit+51+Thong+Lo+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Sukhumvit 51</strong><strong class="t-th">สุขุมวิท 51</strong></a>
                                 <p class="t-en">Sukhumvit, Bangkok</p><p class="t-th">สุขุมวิท, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Sukhumvit+51+Thong+Lo+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="sukhumvit" data-slug="onnut">
                         <a href="branches/onnut.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/onnut.png" alt="On Nut branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -154,11 +187,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+On+Nut+Century+Movie+Plaza+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">On Nut</strong><strong class="t-th">อ่อนนุช</strong></a>
                                 <p class="t-en">Sukhumvit, Bangkok</p><p class="t-th">สุขุมวิท, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+On+Nut+Century+Movie+Plaza+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="north" data-slug="ari">
                         <a href="branches/ari.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/ari.jpg" alt="Ari branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -166,11 +199,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Ari+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Ari</strong><strong class="t-th">อารีย์</strong></a>
                                 <p class="t-en">Phahon Yothin, Bangkok</p><p class="t-th">พหลโยธิน, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Ari+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="city-centre" data-slug="siam-square-one">
                         <a href="branches/siam-square-one.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/siam-square-one.jpg" alt="Siam Square One branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -178,11 +211,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Siam+Square+One+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Siam Square One</strong><strong class="t-th">สยามสแควร์วัน</strong></a>
                                 <p class="t-en">Siam, Bangkok</p><p class="t-th">สยาม, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Siam+Square+One+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="city-centre" data-slug="silom">
                         <a href="branches/silom.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/silom.jpg" alt="Silom branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -190,11 +223,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Silom+Liberty+Square+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Silom</strong><strong class="t-th">สีลม</strong></a>
                                 <p class="t-en">Silom, Bangkok</p><p class="t-th">สีลม, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Silom+Liberty+Square+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="north" data-slug="town-in-town">
                         <a href="branches/town-in-town.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/town%20in%20town.jpg" alt="Town in Town branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -202,11 +235,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Town+In+Town+Lat+Phrao+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Town in Town</strong><strong class="t-th">ทาวน์อินทาวน์</strong></a>
                                 <p class="t-en">Lat Phrao, Bangkok</p><p class="t-th">ลาดพร้าว, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Town+In+Town+Lat+Phrao+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="north" data-slug="ratchayothin">
                         <a href="branches/ratchayothin.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/ratchayothin.jpg" alt="Ratchayothin branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -214,11 +247,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Avenue+Ratchayothin+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Ratchayothin</strong><strong class="t-th">รัชโยธิน</strong></a>
                                 <p class="t-en">Lat Phrao, Bangkok</p><p class="t-th">ลาดพร้าว, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Avenue+Ratchayothin+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="city-centre" data-slug="central-world">
                         <a href="branches/central-world.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/central%20world.jpg" alt="Central World branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -226,11 +259,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+CentralWorld+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Central World</strong><strong class="t-th">เซ็นทรัลเวิลด์</strong></a>
                                 <p class="t-en">Ratchaprasong, Bangkok</p><p class="t-th">ราชประสงค์, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+CentralWorld+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="city-centre" data-slug="mbk">
                         <a href="branches/mbk.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/mbk.jpg" alt="MBK Center branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -238,11 +271,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+MBK+Center+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">MBK Center</strong><strong class="t-th">MBK เซ็นเตอร์</strong></a>
                                 <p class="t-en">Pathumwan, Bangkok</p><p class="t-th">ปทุมวัน, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+MBK+Center+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="west" data-slug="victoria-gardens-bang-kae">
                         <a href="branches/victoria-gardens-bang-kae.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/Victoria%20Gardens.jpg" alt="Victoria Gardens Bang Kae branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -250,11 +283,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Victoria+Gardens+Bang+Khae+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Victoria Gardens Bang Kae</strong><strong class="t-th">วิคตอเรีย การ์เด้น บางแค</strong></a>
                                 <p class="t-en">Bang Khae, Bangkok</p><p class="t-th">บางแค, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Victoria+Gardens+Bang+Khae+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="north" data-slug="central-pinklao">
                         <a href="branches/central-pinklao.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/Central%20Pinklao.jpg" alt="Central Pinklao branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -262,11 +295,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Central+Pinklao+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Central Pinklao</strong><strong class="t-th">เซ็นทรัล ปิ่นเกล้า</strong></a>
                                 <p class="t-en">Pinklao, Bangkok</p><p class="t-th">ปิ่นเกล้า, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Central+Pinklao+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="north" data-slug="don-muang">
                         <a href="branches/don-muang.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/Don%20Muang.jpg" alt="Don Muang branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -274,11 +307,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Don+Muang+Happy+Avenue+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Don Muang</strong><strong class="t-th">ดอนเมือง</strong></a>
                                 <p class="t-en">Don Mueang, Bangkok</p><p class="t-th">ดอนเมือง, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Don+Muang+Happy+Avenue+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="west" data-slug="the-circle-ratchapruk">
                         <a href="branches/the-circle-ratchapruk.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/The%20Circle%20Ratchapruk.png" alt="The Circle Ratchapruk branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -286,11 +319,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Circle+Ratchapruk+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">The Circle Ratchapruk</strong><strong class="t-th">เดอะเซอร์เคิล ราชพฤกษ์</strong></a>
                                 <p class="t-en">Ratchaphruek, Bangkok</p><p class="t-th">ราชพฤกษ์, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Circle+Ratchapruk+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="north" data-slug="the-mall-ngamwongwan">
                         <a href="branches/the-mall-ngamwongwan.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/The%20mall%20Ngamwongwan.jpg" alt="The Mall Ngamwongwan branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -298,11 +331,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Mall+Ngamwongwan+Nonthaburi" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">The Mall Ngamwongwan</strong><strong class="t-th">เดอะมอลล์ งามวงศ์วาน</strong></a>
                                 <p class="t-en">Ngam Wong Wan, Nonthaburi</p><p class="t-th">งามวงศ์วาน, นนทบุรี</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Mall+Ngamwongwan+Nonthaburi" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="sukhumvit" data-slug="little-walk-bangna">
                         <a href="branches/little-walk-bangna.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/Little%20Walk%20Bangna.jpg" alt="Little Walk Bang Na branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -310,11 +343,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Little+Walk+Bang+Na+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Little Walk Bang Na</strong><strong class="t-th">ลิตเติ้ลวอล์ค บางนา</strong></a>
                                 <p class="t-en">Bang Na, Bangkok</p><p class="t-th">บางนา, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Little+Walk+Bang+Na+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="sukhumvit" data-slug="lasalle">
                         <a href="branches/lasalle.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/Lasalle.jpg" alt="Laselle branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -322,11 +355,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Lasalle+Avenue+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Laselle</strong><strong class="t-th">ลาแซล</strong></a>
                                 <p class="t-en">Bang Na, Bangkok</p><p class="t-th">บางนา, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Lasalle+Avenue+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="north" data-slug="the-crystal-park">
                         <a href="branches/the-crystal-park.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/The%20Crystal%20Park.jpg" alt="The Crystal Park Ram Intra branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -334,11 +367,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Crystal+Park+Ram+Intra+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">The Crystal Park Ram Intra</strong><strong class="t-th">เดอะคริสตัล พาร์ค รามอินทรา</strong></a>
                                 <p class="t-en">Ram Intra, Bangkok</p><p class="t-th">รามอินทรา, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Crystal+Park+Ram+Intra+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="sukhumvit" data-slug="101-true-digital-park">
                         <a href="branches/101-true-digital-park.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/101%20True%20Digital%20Park.jpg" alt="101 True Digital Park branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -346,11 +379,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+101+True+Digital+Park+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">101 True Digital Park</strong><strong class="t-th">101 ทรู ดิจิทัล พาร์ค</strong></a>
                                 <p class="t-en">Sukhumvit, Bangkok</p><p class="t-th">สุขุมวิท, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+101+True+Digital+Park+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="north" data-slug="the-nine-rama-9">
                         <a href="branches/the-nine-rama-9.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/The%20Nine%20Center%20Rama%209.jpg" alt="The Nine Rama 9 branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -358,11 +391,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Nine+Center+Rama+9+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">The Nine Rama 9</strong><strong class="t-th">เดอะไนน์ พระราม 9</strong></a>
                                 <p class="t-en">Rama 9, Bangkok</p><p class="t-th">พระราม 9, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Nine+Center+Rama+9+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="north" data-slug="the-mall-bangkapi">
                         <a href="branches/the-mall-bangkapi.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/The%20Mall%20Bangkapi.png" alt="The Mall Bangkapi branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -370,11 +403,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Mall+Bangkapi+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">The Mall Bangkapi</strong><strong class="t-th">เดอะมอลล์ บางกะปิ</strong></a>
                                 <p class="t-en">Bang Kapi, Bangkok</p><p class="t-th">บางกะปิ, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Mall+Bangkapi+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="west" data-slug="the-mall-bangkhae">
                         <a href="branches/the-mall-bangkhae.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/The%20Mall%20Bangkae.jpg" alt="The Mall Bang Khae branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -382,11 +415,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Mall+Bang+Khae+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">The Mall Bang Khae</strong><strong class="t-th">เดอะมอลล์ บางแค</strong></a>
                                 <p class="t-en">Bang Khae, Bangkok</p><p class="t-th">บางแค, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Mall+Bang+Khae+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="west" data-slug="covehill">
                         <a href="branches/covehill.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/cove-hill.jpg" alt="Cove Hill branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -394,11 +427,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Cove+Hill+Charoen+Krung+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Cove Hill</strong><strong class="t-th">โคฟ ฮิลล์</strong></a>
                                 <p class="t-en">Bangkok</p><p class="t-th">กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Cove+Hill+Charoen+Krung+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="west" data-slug="the-mall-thapra">
                         <a href="branches/the-mall-thapra.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/the-mall-thapra.png" alt="The Mall Thapra branch" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot"></div>
@@ -406,7 +439,7 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Mall+Thapra+Bangkok" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">The Mall Thapra</strong><strong class="t-th">เดอะมอลล์ ท่าพระ</strong></a>
                                 <p class="t-en">Thon Buri, Bangkok</p><p class="t-th">ธนบุรี, กรุงเทพ</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Mall+Thapra+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
@@ -423,7 +456,7 @@
                 </div>
                 <div class="locations-grid">
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="north" data-slug="muang-thong">
                         <a href="branches/muang-thong.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/Muang%20Thong.png" alt="Muang Thong" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot loc-dot--province"></div>
@@ -431,11 +464,11 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Muang+Thong+Thani+Chaengwattana+Nonthaburi" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Muang Thong</strong><strong class="t-th">เมืองทอง</strong></a>
                                 <p class="t-en">Nonthaburi</p><p class="t-th">นนทบุรี</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Muang+Thong+Thani+Chaengwattana+Nonthaburi" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link">
+                    <div class="location-card location-card--link" data-zone="province" data-slug="korat">
                         <a href="branches/korat.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/Korat.jpg" alt="Korat" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot loc-dot--province"></div>
@@ -443,7 +476,7 @@
                                 <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Terminal+21+Korat+Nakhon+Ratchasima" target="_blank" rel="noopener" class="loc-name-link"><strong class="t-en">Korat</strong><strong class="t-th">โคราช</strong></a>
                                 <p class="t-en">Nakhon Ratchasima</p><p class="t-th">นครราชสีมา</p>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Terminal+21+Korat+Nakhon+Ratchasima" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
@@ -460,7 +493,7 @@
                 </div>
                 <div class="locations-grid">
 
-                    <div class="location-card location-card--link location-card--mobile">
+                    <div class="location-card location-card--link location-card--mobile" data-zone="west" data-slug="the-bright-rama-ii">
                         <a href="branches/the-bright-rama-ii.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/The%20Bright%20Rama%20II.jpg" alt="The Bright Rama II" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot loc-dot--mobile"></div>
@@ -469,11 +502,11 @@
                                 <p class="t-en">Rama II, Bangkok</p><p class="t-th">พระราม 2, กรุงเทพ</p>
                                 <span class="loc-mobile-tag t-en">Mobile</span><span class="loc-mobile-tag t-th">โมบาย</span>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Bright+Rama+2+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link location-card--mobile">
+                    <div class="location-card location-card--link location-card--mobile" data-zone="north" data-slug="ptt-prachauthit">
                         <a href="branches/ptt-prachauthit.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/PTT%20Prachauthit-Ladprao.jpg" alt="PTT Prachauthit-Ladprao" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot loc-dot--mobile"></div>
@@ -482,11 +515,11 @@
                                 <p class="t-en">Lat Phrao, Bangkok</p><p class="t-th">ลาดพร้าว, กรุงเทพ</p>
                                 <span class="loc-mobile-tag t-en">Container</span><span class="loc-mobile-tag t-th">คอนเทนเนอร์</span>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+PTT+Pracha+Uthit+Lat+Phrao+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link location-card--mobile">
+                    <div class="location-card location-card--link location-card--mobile" data-zone="north" data-slug="ptt-vibhavadi">
                         <a href="branches/ptt-vibhavadi.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/PTT%20Vibhavadi-Rangsit%2062.jpg" alt="PTT Vibhavadi-Rangsit 62" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot loc-dot--mobile"></div>
@@ -495,11 +528,11 @@
                                 <p class="t-en">Vibhavadi, Bangkok</p><p class="t-th">วิภาวดี, กรุงเทพ</p>
                                 <span class="loc-mobile-tag t-en">Container</span><span class="loc-mobile-tag t-th">คอนเทนเนอร์</span>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+PTT+Vibhavadi+Rangsit+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link location-card--mobile">
+                    <div class="location-card location-card--link location-card--mobile" data-zone="west" data-slug="ptt-boromratchachonnani">
                         <a href="branches/ptt-boromratchachonnani.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/PTT%20Boromratchachonnani%2097.jpg" alt="PTT Boromratchachonnani 97" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot loc-dot--mobile"></div>
@@ -508,11 +541,11 @@
                                 <p class="t-en">Boromratchachonnani, Bangkok</p><p class="t-th">บรมราชชนนี, กรุงเทพ</p>
                                 <span class="loc-mobile-tag t-en">Container</span><span class="loc-mobile-tag t-th">คอนเทนเนอร์</span>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+PTT+Boromratchachonnani+97+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link location-card--mobile">
+                    <div class="location-card location-card--link location-card--mobile" data-zone="north" data-slug="market-place-nawamin">
                         <a href="branches/market-place-nawamin.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/Market%20Place%20Nawamin.jpg" alt="Market Place Nawamin" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot loc-dot--mobile"></div>
@@ -521,11 +554,11 @@
                                 <p class="t-en">Nawamin, Bangkok</p><p class="t-th">นวมินทร์, กรุงเทพ</p>
                                 <span class="loc-mobile-tag t-en">Container</span><span class="loc-mobile-tag t-th">คอนเทนเนอร์</span>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Market+Place+Nawamin+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link location-card--mobile">
+                    <div class="location-card location-card--link location-card--mobile" data-zone="north" data-slug="charn-at-the-avenue">
                         <a href="branches/charn-at-the-avenue.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/Charn%20At%20The%20Avenue.png" alt="Charn At The Avenue" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot loc-dot--mobile"></div>
@@ -534,11 +567,11 @@
                                 <p class="t-en">Bangkok</p><p class="t-th">กรุงเทพ</p>
                                 <span class="loc-mobile-tag t-en">Container</span><span class="loc-mobile-tag t-th">คอนเทนเนอร์</span>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+Charn+At+The+Avenue+Chaengwattana+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
-                    <div class="location-card location-card--link location-card--mobile">
+                    <div class="location-card location-card--link location-card--mobile" data-zone="city-centre" data-slug="the-quarter-silom">
                         <a href="branches/the-quarter-silom.html" class="loc-card-img-link"><div class="loc-card-img"><img src="img/branches/quarter-silom.jpg" alt="The Quarter Silom" loading="lazy"></div></a>
                         <div class="loc-card-footer">
                             <div class="loc-dot loc-dot--mobile"></div>
@@ -547,7 +580,7 @@
                                 <p class="t-en">Silom, Bangkok</p><p class="t-th">สีลม, กรุงเทพ</p>
                                 <span class="loc-mobile-tag t-en">Container</span><span class="loc-mobile-tag t-th">คอนเทนเนอร์</span>
                             </div>
-                            <span class="loc-maps-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+                            <a href="https://www.google.com/maps/search/NEVERSAYCUTZ+The+Quarter+Silom+Bangkok" target="_blank" rel="noopener" class="loc-maps-icon" aria-label="Open in Maps"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                         </div>
                     </div>
 
