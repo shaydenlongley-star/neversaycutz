@@ -1830,6 +1830,8 @@ footer {
 .loc-name-link:hover strong { color: var(--gold); }
 
 /* Card image */
+.loc-card-img-link { display: block; }
+.loc-card-img-link:hover .loc-card-img img { transform: scale(1.06); }
 .loc-card-img {
     position: relative;
     aspect-ratio: 16/9;
