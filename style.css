@@ -1065,25 +1065,21 @@ footer {
 
 /* ── LANG BUTTON ── */
 .lang-btn {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1500;
-    background: var(--black-2);
+    background: none;
     border: none;
     border-left: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    border-radius: 0 0 0 8px;
-    color: var(--text-mid);
+    padding: 0 0 0 14px;
+    color: var(--text-muted);
     font-family: 'Inter', sans-serif;
-    font-size: 0.68rem;
-    font-weight: 600;
-    padding: 5px 14px 6px;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: color 0.2s;
     white-space: nowrap;
+    flex-shrink: 0;
 }
-.lang-btn:hover { border-color: var(--gold); color: var(--gold); }
+.lang-btn:hover { color: var(--gold); }
 
 /* ── MOBILE MENU ── */
 .mobile-menu {
