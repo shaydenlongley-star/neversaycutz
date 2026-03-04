@@ -25,7 +25,7 @@ const savedLang = localStorage.getItem('nvsc-lang') || 'en';
 function setLang(lang) {
     document.body.classList.remove('lang-en', 'lang-th');
     document.body.classList.add('lang-' + lang);
-    if (langToggle) langToggle.textContent = lang === 'en' ? 'TH' : 'EN';
+    if (langToggle) langToggle.textContent = lang === 'en' ? 'ภาษาไทย' : 'English';
     localStorage.setItem('nvsc-lang', lang);
 }
 
